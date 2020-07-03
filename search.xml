@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>markdown语法</title>
+    <url>/2020/07/02/markdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><a id="more"></a>
+<ul>
+<li><p>列表1</p>
+</li>
+<li><p>列表2<br>  a 子列表<br>  b 子列表</p>
+</li>
+<li><p>列表3</p>
+<p><a href="http://www.mackxin.com" target="_blank" rel="noopener">馨客栈</a></p>
+<p><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1593650787&di=c0fd1910d71b1599e7af7c387fa4bcf0&src=http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg" alt="馨客栈logo"></p>
+</li>
+</ul>
+<p><em>斜体</em><br><strong>粗体</strong><br><code>&lt;html&gt;&lt;/html&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>引用内容1</p>
+<blockquote>
+<p>引用内容2</p>
+</blockquote>
+</blockquote>
+<hr>
+]]></content>
+      <categories>
+        <category>代码工具</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>馨客栈</title>
+    <url>/2020/07/02/%E9%A6%A8%E5%AE%A2%E6%A0%88/</url>
+    <content><![CDATA[<h2 id="一个很好的前端导航"><a href="#一个很好的前端导航" class="headerlink" title="一个很好的前端导航"></a>一个很好的前端导航</h2><h4 id="前端各类网站"><a href="#前端各类网站" class="headerlink" title="前端各类网站"></a>前端各类网站</h4>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>导航</tag>
+        <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>jdbc的连接与关闭</title>
+    <url>/2020/07/02/jdbc%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E5%85%B3%E9%97%AD/</url>
+    <content><![CDATA[<h1 id="jdbc的普通连接与关闭"><a href="#jdbc的普通连接与关闭" class="headerlink" title="jdbc的普通连接与关闭"></a>jdbc的普通连接与关闭</h1><h4 id="连接方式一"><a href="#连接方式一" class="headerlink" title="连接方式一"></a>连接方式一</h4><ol>
+<li><p>无需配置文件</p>
+<ol>
+<li>jar包：mysql</li>
+</ol>
+<p> <strong>代码展示</strong></p>
+</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Connection <span class="title">getCon</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="comment">//注册驱动（static代码块会自动加载Driver驱动）</span></span><br><span class="line">    Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">    <span class="comment">//设置参数</span></span><br><span class="line">    String url = <span class="string">"jdbc:mysql://localhost:3306/hexo"</span>;</span><br><span class="line">    String user = <span class="string">"root"</span>;</span><br><span class="line">    String password = <span class="string">"admin"</span>;</span><br><span class="line">    <span class="comment">//建立连接</span></span><br><span class="line">    Connection con = DriverManager.getConnection(url, user, password);</span><br><span class="line">    <span class="keyword">return</span> con;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<h4 id="连接方式二"><a href="#连接方式二" class="headerlink" title="连接方式二"></a>连接方式二</h4><ol start="2">
+<li><p>properties配置文件</p>
+</li>
+<li><p>jar包</p>
+</li>
+<li><p>properties文件</p>
+ <figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">user</span>=<span class="string">root</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">admin</span></span><br><span class="line"><span class="attr">url</span>=<span class="string">jdbc:mysql://localhost:3306/hexo?rewriteBatchedStatements=true</span></span><br><span class="line"><span class="attr">driverClass</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<p>​             <strong>代码展示</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Connection <span class="title">getCon1</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    <span class="comment">//IO流读取配置信息</span></span><br><span class="line"><span class="comment">//    InputStream is = GetConnection.class.getClassLoader().getResourceAsStream("jdbc.properties");</span></span><br><span class="line">    InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream(<span class="string">"jdbc.properties"</span>);</span><br><span class="line">    <span class="comment">//创造properties类</span></span><br><span class="line">    Properties pros = <span class="keyword">new</span> Properties();</span><br><span class="line">    <span class="comment">//加载流</span></span><br><span class="line">    pros.load(is);</span><br><span class="line">    <span class="comment">//获取参数值</span></span><br><span class="line">    String user = pros.getProperty(<span class="string">"user"</span>);</span><br><span class="line">    String password = pros.getProperty(<span class="string">"password"</span>);</span><br><span class="line">    String url = pros.getProperty(<span class="string">"url"</span>);</span><br><span class="line">    String driverClass = pros.getProperty(<span class="string">"driverClass"</span>);</span><br><span class="line">    <span class="comment">//加载驱动</span></span><br><span class="line">    Class.forName(driverClass);</span><br><span class="line">    <span class="comment">//获得连接</span></span><br><span class="line">    Connection con = DriverManager.getConnection(url, user, password);</span><br><span class="line">    <span class="keyword">return</span> con;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="关闭方式一"><a href="#关闭方式一" class="headerlink" title="关闭方式一"></a>关闭方式一</h4><ol>
+<li>增删改关闭资源</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 关闭资源（增删改）</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> con</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> pres</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">(Connection con, PreparedStatement pres)</span></span>&#123;</span><br><span class="line">   <span class="keyword">try</span> &#123;</span><br><span class="line">     <span class="keyword">if</span> (con != <span class="keyword">null</span>)&#123;</span><br><span class="line">       con.close();</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">if</span> (pres != <span class="keyword">null</span>)&#123;</span><br><span class="line">       pres.close();</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">     e.printStackTrace();</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="关闭方式二"><a href="#关闭方式二" class="headerlink" title="关闭方式二"></a><strong>关闭方式二</strong></h4><p>2.查询关闭资源</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 关闭资源（查询）</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> con</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> pres</span></span><br><span class="line"><span class="comment">   * <span class="doctag">@param</span> rs</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">closeAll</span><span class="params">(Connection con, PreparedStatement pres, ResultSet rs)</span></span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (con != <span class="keyword">null</span>)&#123;</span><br><span class="line">        con.close();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (pres != <span class="keyword">null</span>)&#123;</span><br><span class="line">        pres.close();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (rs != <span class="keyword">null</span>)&#123;</span><br><span class="line">        rs.close();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">      e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <tags>
+        <tag>jdbc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/06/30/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
