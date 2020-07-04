@@ -20,23 +20,26 @@
     var CONFIG = {"hostname":"dgxan.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Markdown的使用二级标题三级标题四级标题">
+  <meta name="description" content="Dbcp连接池的使用无需配置文件1234567891011121314151617181920212223242526272829303132&#x2F;**  * 无需配置文件  *&#x2F; public void testDbcp()&amp;#123;   &#x2F;&#x2F;创建的DBCP的连接池DataSource   BasicDataSource source &#x3D; null;   try &amp;#123;     source">
 <meta property="og:type" content="article">
-<meta property="og:title" content="markdown语法">
-<meta property="og:url" content="https://dgxan.github.io/2020/07/02/markdown%E8%AF%AD%E6%B3%95/index.html">
+<meta property="og:title" content="dbcp连接池的使用">
+<meta property="og:url" content="https://dgxan.github.io/2020/07/04/dbcp%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Markdown的使用二级标题三级标题四级标题">
+<meta property="og:description" content="Dbcp连接池的使用无需配置文件1234567891011121314151617181920212223242526272829303132&#x2F;**  * 无需配置文件  *&#x2F; public void testDbcp()&amp;#123;   &#x2F;&#x2F;创建的DBCP的连接池DataSource   BasicDataSource source &#x3D; null;   try &amp;#123;     source">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1593650787&di=c0fd1910d71b1599e7af7c387fa4bcf0&src=http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg">
-<meta property="article:published_time" content="2020-07-02T00:31:55.000Z">
-<meta property="article:modified_time" content="2020-07-02T01:32:14.347Z">
+<meta property="og:image" content="c:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870243805.png">
+<meta property="og:image" content="c:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870270940.png">
+<meta property="og:image" content="c:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870290733.png">
+<meta property="article:published_time" content="2020-07-04T13:38:11.000Z">
+<meta property="article:modified_time" content="2020-07-04T13:50:29.379Z">
 <meta property="article:author" content="dgxan">
-<meta property="article:tag" content="工具">
-<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="连接池">
+<meta property="article:tag" content="jdbc">
+<meta property="article:tag" content="dpcp">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1593650787&di=c0fd1910d71b1599e7af7c387fa4bcf0&src=http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg">
+<meta name="twitter:image" content="c:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870243805.png">
 
-<link rel="canonical" href="https://dgxan.github.io/2020/07/02/markdown%E8%AF%AD%E6%B3%95/">
+<link rel="canonical" href="https://dgxan.github.io/2020/07/04/dbcp%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -49,7 +52,7 @@
   };
 </script>
 
-  <title>markdown语法 | Hexo</title>
+  <title>dbcp连接池的使用 | Hexo</title>
   
 
 
@@ -193,7 +196,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://dgxan.github.io/2020/07/02/markdown%E8%AF%AD%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="https://dgxan.github.io/2020/07/04/dbcp%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.png">
@@ -206,7 +209,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          markdown语法
+          dbcp连接池的使用
         </h1>
 
         <div class="post-meta">
@@ -217,7 +220,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-07-02 08:31:55 / 修改时间：09:32:14" itemprop="dateCreated datePublished" datetime="2020-07-02T08:31:55+08:00">2020-07-02</time>
+              <time title="创建时间：2020-07-04 21:38:11 / 修改时间：21:50:29" itemprop="dateCreated datePublished" datetime="2020-07-04T21:38:11+08:00">2020-07-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -225,7 +228,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%BB%A3%E7%A0%81%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">代码工具</span></a>
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5/" itemprop="url" rel="index"><span itemprop="name">数据库连接</span></a>
                 </span>
             </span>
 
@@ -238,8 +241,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/07/02/markdown%E8%AF%AD%E6%B3%95/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/02/markdown%E8%AF%AD%E6%B3%95/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/07/04/dbcp%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/04/dbcp%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -254,28 +257,33 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><a id="more"></a>
-<ul>
-<li><p>列表1</p>
-</li>
-<li><p>列表2<br>  a 子列表<br>  b 子列表</p>
-</li>
-<li><p>列表3</p>
-<p><a href="http://www.mackxin.com" target="_blank" rel="noopener">馨客栈</a></p>
-<p><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1593650787&di=c0fd1910d71b1599e7af7c387fa4bcf0&src=http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg" alt="馨客栈logo"></p>
-</li>
-</ul>
-<p><em>斜体</em><br><strong>粗体</strong><br><code>&lt;html&gt;&lt;/html&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+        <h4 id="Dbcp连接池的使用"><a href="#Dbcp连接池的使用" class="headerlink" title="Dbcp连接池的使用"></a>Dbcp连接池的使用</h4><h5 id="无需配置文件"><a href="#无需配置文件" class="headerlink" title="无需配置文件"></a>无需配置文件</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 无需配置文件</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testDbcp</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="comment">//创建的DBCP的连接池DataSource</span></span><br><span class="line">   BasicDataSource source = <span class="keyword">null</span>;</span><br><span class="line">   <span class="keyword">try</span> &#123;</span><br><span class="line">     source = <span class="keyword">new</span> BasicDataSource();</span><br><span class="line">     <span class="comment">//配置基本信息</span></span><br><span class="line">     source.setDriverClassName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">     source.setUrl(<span class="string">"jdbc:mysql://localhost:3306/acc"</span>);</span><br><span class="line">     source.setUsername(<span class="string">"root"</span>);</span><br><span class="line">     source.setPassword(<span class="string">"admin"</span>);</span><br><span class="line">     <span class="comment">//其它基本信息</span></span><br><span class="line">     source.setInitialSize(<span class="number">5</span>);</span><br><span class="line">     source.setMaxIdle(<span class="number">2</span>);</span><br><span class="line">     source.setMaxWaitMillis(<span class="number">5000</span>);</span><br><span class="line">     source. setMaxTotal(<span class="number">5</span>);<span class="comment">//最大活动数</span></span><br><span class="line">     <span class="comment">//创建连接</span></span><br><span class="line">     Connection con = source.getConnection();</span><br><span class="line">     System.out.println(con);</span><br><span class="line">   &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">     e.printStackTrace();</span><br><span class="line">   &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">     <span class="keyword">try</span> &#123;</span><br><span class="line">       <span class="keyword">if</span>(source != <span class="keyword">null</span>)</span><br><span class="line">         source.close();</span><br><span class="line">     &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">       e.printStackTrace();</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>引用内容1</p>
-<blockquote>
-<p>引用内容2</p>
-</blockquote>
-</blockquote>
 <hr>
+<a id="more"></a>
 
+<h4 id="需要配置properties文件的方式"><a href="#需要配置properties文件的方式" class="headerlink" title="需要配置properties文件的方式"></a>需要配置properties文件的方式</h4><ol>
+<li>dbcp.properties</li>
+</ol>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">driverClassName</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="attr">url</span>=<span class="string">jdbc:mysql:///hexo</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">root</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">admin</span></span><br><span class="line"></span><br><span class="line"><span class="attr">initialSize</span>=<span class="string">10</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>代码展示</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">public</span> Connection <span class="title">getDbcp</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    Properties pros = <span class="keyword">new</span> Properties();</span><br><span class="line"><span class="comment">//  InputStream is = new FileInputStream(new File("src/dpcp.properties"));</span></span><br><span class="line">    InputStream is = GetDbcp.class.getClassLoader().getResourceAsStream("dpcp.properties");</span><br><span class="line">    pros.load(is);</span><br><span class="line">    BasicDataSource bds = BasicDataSourceFactory.createDataSource(pros);</span><br><span class="line">    Connection con = bds.getConnection();</span><br><span class="line">    <span class="keyword">return</span> con;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><h6 id="dbcp导入的jar包"><a href="#dbcp导入的jar包" class="headerlink" title="dbcp导入的jar包"></a>dbcp导入的jar包</h6><ol>
+<li><p><img src="C:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870243805.png" alt="1593870243805"></p>
+</li>
+<li><p><img src="C:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870270940.png" alt="1593870270940"></p>
+</li>
+<li><p><img src="C:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870290733.png" alt="1593870290733"></p>
+</li>
+</ol>
+<h6 id="properties文件放到src根目录下"><a href="#properties文件放到src根目录下" class="headerlink" title="properties文件放到src根目录下"></a>properties文件放到src根目录下</h6>
     </div>
 
     
@@ -338,10 +346,12 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">    #
-               <i class="fa fa-google"></i>工具</a>
-              <a href="/tags/markdown/" rel="tag">    #
-               <i class="fa fa-google"></i>markdown</a>
+              <a href="/tags/%E8%BF%9E%E6%8E%A5%E6%B1%A0/" rel="tag">    #
+               <i class="fa fa-google"></i>连接池</a>
+              <a href="/tags/jdbc/" rel="tag">    #
+               <i class="fa fa-google"></i>jdbc</a>
+              <a href="/tags/dpcp/" rel="tag">    #
+               <i class="fa fa-google"></i>dpcp</a>
           </div>
 
         
@@ -350,12 +360,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/02/%E9%A6%A8%E5%AE%A2%E6%A0%88/" rel="prev" title="馨客栈">
-      <i class="fa fa-chevron-left"></i> 馨客栈
+    <a href="/2020/07/03/GetC3p0%E7%9A%84%E8%BF%9E%E6%8E%A5%E6%B1%A0/" rel="prev" title="GetC3p0的连接池">
+      <i class="fa fa-chevron-left"></i> GetC3p0的连接池
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/07/02/jdbc%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E5%85%B3%E9%97%AD/" rel="next" title="jdbc的连接与关闭">
-      jdbc的连接与关闭 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/07/04/druid%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="druid连接池的使用">
+      druid连接池的使用 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -433,7 +443,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown的使用"><span class="nav-number">1.</span> <span class="nav-text">Markdown的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">四级标题</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Dbcp连接池的使用"><span class="nav-number">1.</span> <span class="nav-text">Dbcp连接池的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#无需配置文件"><span class="nav-number">1.1.</span> <span class="nav-text">无需配置文件</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#需要配置properties文件的方式"><span class="nav-number">2.</span> <span class="nav-text">需要配置properties文件的方式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#注意"><span class="nav-number">2.1.</span> <span class="nav-text">注意</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#dbcp导入的jar包"><span class="nav-number">2.1.1.</span> <span class="nav-text">dbcp导入的jar包</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#properties文件放到src根目录下"><span class="nav-number">2.1.2.</span> <span class="nav-text">properties文件放到src根目录下</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

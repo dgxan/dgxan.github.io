@@ -1,57 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/06/30/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>markdown语法</title>
-    <url>/2020/07/02/markdown%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><a id="more"></a>
-<ul>
-<li><p>列表1</p>
-</li>
-<li><p>列表2<br>  a 子列表<br>  b 子列表</p>
-</li>
-<li><p>列表3</p>
-<p><a href="http://www.mackxin.com" target="_blank" rel="noopener">馨客栈</a></p>
-<p><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1593650787&di=c0fd1910d71b1599e7af7c387fa4bcf0&src=http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg" alt="馨客栈logo"></p>
-</li>
-</ul>
-<p><em>斜体</em><br><strong>粗体</strong><br><code>&lt;html&gt;&lt;/html&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>引用内容1</p>
-<blockquote>
-<p>引用内容2</p>
-</blockquote>
-</blockquote>
-<hr>
-]]></content>
-      <categories>
-        <category>代码工具</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-        <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>GetC3p0的连接池</title>
     <url>/2020/07/03/GetC3p0%E7%9A%84%E8%BF%9E%E6%8E%A5%E6%B1%A0/</url>
     <content><![CDATA[<h4 id="连接方式一"><a href="#连接方式一" class="headerlink" title="连接方式一"></a>连接方式一</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 不用配置文件</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Connection <span class="title">getC3p02</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">  ComboPooledDataSource cpds = <span class="keyword">new</span> ComboPooledDataSource();</span><br><span class="line">  cpds.setDriverClass(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">  cpds.setJdbcUrl(<span class="string">"jdbc:mysql://localhost:3306/acc"</span>);</span><br><span class="line">  cpds.setUser(<span class="string">"root"</span>);</span><br><span class="line">  cpds.setPassword(<span class="string">"admin"</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">//		设置初始化连接数</span></span><br><span class="line">  cpds.setInitialPoolSize(<span class="number">10</span>);</span><br><span class="line">  Connection conn = cpds.getConnection();</span><br><span class="line">  <span class="comment">//		销毁c3p0</span></span><br><span class="line">  DataSources.destroy(cpds);</span><br><span class="line">  <span class="keyword">return</span> conn;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -75,6 +24,91 @@
         <tag>c3p0</tag>
         <tag>连接池</tag>
         <tag>jdbc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>druid连接池的使用</title>
+    <url>/2020/07/04/druid%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h4 id="druid连接的使用-推荐使用druid连接池【阿里】"><a href="#druid连接的使用-推荐使用druid连接池【阿里】" class="headerlink" title="druid连接的使用(推荐使用druid连接池【阿里】)"></a>druid连接的使用(推荐使用druid连接池【阿里】)</h4><h5 id="配置文件druid-properties"><a href="#配置文件druid-properties" class="headerlink" title="配置文件druid.properties"></a>配置文件druid.properties</h5><figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">url</span>=<span class="string">jdbc:mysql://localhost:3306/hexo</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">root</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">admin</span></span><br><span class="line"><span class="attr">driverClassName</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"></span><br><span class="line"><span class="attr">initialSize</span>=<span class="string">10</span></span><br><span class="line"><span class="attr">maxActive</span>=<span class="string">10</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="代码展示"><a href="#代码展示" class="headerlink" title="代码展示"></a>代码展示</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Connection <span class="title">getDruid</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    Properties pros = <span class="keyword">new</span> Properties();</span><br><span class="line">    File file = <span class="keyword">new</span> File(<span class="string">"src/druid.properties"</span>);</span><br><span class="line">    InputStream fis = <span class="keyword">new</span> FileInputStream(file);</span><br><span class="line">    pros.load(fis);</span><br><span class="line">    DataSource source = DruidDataSourceFactory.createDataSource(pros);</span><br><span class="line">    Connection con = source.getConnection();</span><br><span class="line">    <span class="keyword">return</span> con;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>数据库连接</category>
+      </categories>
+      <tags>
+        <tag>连接池</tag>
+        <tag>jdbc</tag>
+        <tag>druid</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dbcp连接池的使用</title>
+    <url>/2020/07/04/dbcp%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h4 id="Dbcp连接池的使用"><a href="#Dbcp连接池的使用" class="headerlink" title="Dbcp连接池的使用"></a>Dbcp连接池的使用</h4><h5 id="无需配置文件"><a href="#无需配置文件" class="headerlink" title="无需配置文件"></a>无需配置文件</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 无需配置文件</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testDbcp</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="comment">//创建的DBCP的连接池DataSource</span></span><br><span class="line">   BasicDataSource source = <span class="keyword">null</span>;</span><br><span class="line">   <span class="keyword">try</span> &#123;</span><br><span class="line">     source = <span class="keyword">new</span> BasicDataSource();</span><br><span class="line">     <span class="comment">//配置基本信息</span></span><br><span class="line">     source.setDriverClassName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">     source.setUrl(<span class="string">"jdbc:mysql://localhost:3306/acc"</span>);</span><br><span class="line">     source.setUsername(<span class="string">"root"</span>);</span><br><span class="line">     source.setPassword(<span class="string">"admin"</span>);</span><br><span class="line">     <span class="comment">//其它基本信息</span></span><br><span class="line">     source.setInitialSize(<span class="number">5</span>);</span><br><span class="line">     source.setMaxIdle(<span class="number">2</span>);</span><br><span class="line">     source.setMaxWaitMillis(<span class="number">5000</span>);</span><br><span class="line">     source. setMaxTotal(<span class="number">5</span>);<span class="comment">//最大活动数</span></span><br><span class="line">     <span class="comment">//创建连接</span></span><br><span class="line">     Connection con = source.getConnection();</span><br><span class="line">     System.out.println(con);</span><br><span class="line">   &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">     e.printStackTrace();</span><br><span class="line">   &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">     <span class="keyword">try</span> &#123;</span><br><span class="line">       <span class="keyword">if</span>(source != <span class="keyword">null</span>)</span><br><span class="line">         source.close();</span><br><span class="line">     &#125; <span class="keyword">catch</span> (SQLException e) &#123;</span><br><span class="line">       e.printStackTrace();</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<a id="more"></a>
+
+<h4 id="需要配置properties文件的方式"><a href="#需要配置properties文件的方式" class="headerlink" title="需要配置properties文件的方式"></a>需要配置properties文件的方式</h4><ol>
+<li>dbcp.properties</li>
+</ol>
+<figure class="highlight properties"><table><tr><td class="code"><pre><span class="line"><span class="attr">driverClassName</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="attr">url</span>=<span class="string">jdbc:mysql:///hexo</span></span><br><span class="line"><span class="attr">username</span>=<span class="string">root</span></span><br><span class="line"><span class="attr">password</span>=<span class="string">admin</span></span><br><span class="line"></span><br><span class="line"><span class="attr">initialSize</span>=<span class="string">10</span></span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>代码展示</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">public</span> Connection <span class="title">getDbcp</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    Properties pros = <span class="keyword">new</span> Properties();</span><br><span class="line"><span class="comment">//  InputStream is = new FileInputStream(new File("src/dpcp.properties"));</span></span><br><span class="line">    InputStream is = GetDbcp.class.getClassLoader().getResourceAsStream("dpcp.properties");</span><br><span class="line">    pros.load(is);</span><br><span class="line">    BasicDataSource bds = BasicDataSourceFactory.createDataSource(pros);</span><br><span class="line">    Connection con = bds.getConnection();</span><br><span class="line">    <span class="keyword">return</span> con;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h5><h6 id="dbcp导入的jar包"><a href="#dbcp导入的jar包" class="headerlink" title="dbcp导入的jar包"></a>dbcp导入的jar包</h6><ol>
+<li><p><img src="C:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870243805.png" alt="1593870243805"></p>
+</li>
+<li><p><img src="C:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870270940.png" alt="1593870270940"></p>
+</li>
+<li><p><img src="C:%5CUsers%5C86180%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1593870290733.png" alt="1593870290733"></p>
+</li>
+</ol>
+<h6 id="properties文件放到src根目录下"><a href="#properties文件放到src根目录下" class="headerlink" title="properties文件放到src根目录下"></a>properties文件放到src根目录下</h6>]]></content>
+      <categories>
+        <category>数据库连接</category>
+      </categories>
+      <tags>
+        <tag>连接池</tag>
+        <tag>jdbc</tag>
+        <tag>dpcp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/06/30/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>馨客栈</title>
+    <url>/2020/07/02/%E9%A6%A8%E5%AE%A2%E6%A0%88/</url>
+    <content><![CDATA[<h2 id="一个很好的前端导航"><a href="#一个很好的前端导航" class="headerlink" title="一个很好的前端导航"></a>一个很好的前端导航</h2><h4 id="前端各类网站"><a href="#前端各类网站" class="headerlink" title="前端各类网站"></a>前端各类网站</h4>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>导航</tag>
+        <tag>分享</tag>
       </tags>
   </entry>
   <entry>
@@ -122,15 +156,36 @@
       </tags>
   </entry>
   <entry>
-    <title>馨客栈</title>
-    <url>/2020/07/02/%E9%A6%A8%E5%AE%A2%E6%A0%88/</url>
-    <content><![CDATA[<h2 id="一个很好的前端导航"><a href="#一个很好的前端导航" class="headerlink" title="一个很好的前端导航"></a>一个很好的前端导航</h2><h4 id="前端各类网站"><a href="#前端各类网站" class="headerlink" title="前端各类网站"></a>前端各类网站</h4>]]></content>
+    <title>markdown语法</title>
+    <url>/2020/07/02/markdown%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="Markdown的使用"><a href="#Markdown的使用" class="headerlink" title="Markdown的使用"></a>Markdown的使用</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><a id="more"></a>
+<ul>
+<li><p>列表1</p>
+</li>
+<li><p>列表2<br>  a 子列表<br>  b 子列表</p>
+</li>
+<li><p>列表3</p>
+<p><a href="http://www.mackxin.com" target="_blank" rel="noopener">馨客栈</a></p>
+<p><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1593650787&di=c0fd1910d71b1599e7af7c387fa4bcf0&src=http://a3.att.hudong.com/14/75/01300000164186121366756803686.jpg" alt="馨客栈logo"></p>
+</li>
+</ul>
+<p><em>斜体</em><br><strong>粗体</strong><br><code>&lt;html&gt;&lt;/html&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;title&gt;&lt;&#x2F;title&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>引用内容1</p>
+<blockquote>
+<p>引用内容2</p>
+</blockquote>
+</blockquote>
+<hr>
+]]></content>
       <categories>
-        <category>前端</category>
+        <category>代码工具</category>
       </categories>
       <tags>
-        <tag>导航</tag>
-        <tag>分享</tag>
+        <tag>工具</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
 </search>
